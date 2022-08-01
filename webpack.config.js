@@ -12,10 +12,11 @@ module.exports = {
 	devServer: {
 		static: './dist',
 	},
-	// plugins: [
-	// 	new HtmlWebpackPlugin({
-	// 	})
-	// ],
+	plugins: [
+		new HtmlWebpackPlugin({
+      template: 'src/index.html'
+		})
+	],
 	module: {
 		rules: [
 			{
